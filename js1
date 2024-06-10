@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <!--get metodu-->
+    <form method="get"><br/>
+    <input type="text" name="name" placeholder="KeremBİTER" /><br/>
+    <input type="email" name="email" placeholder="info@kerem.com" /><br/>
+    <input type="password" name="password" /><br/>
+    <input type="checkbox" name="checkbox" /><br/>
+    <input type="radio" name="radio" checked /><br/>
+    <input type="radio" name="radio" /><br/>
+    <input type="date" name="date" /><br/>
+    <input type="color" name="color" /><br/>
+    <input type="button" name="button" /><br/>
+    <textarea name="textarea" placeholder="Kerem BİTER"></textarea><br/>
+    <button type="sumbit">Gönder</button>
+</form>
+</body>
+</html>
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button type="button" onclick="alert('hello world')">Click Me!</button>
+    <button type="button" onclick="document.write('lorem ipsum')">Click Me!</button> 
+    <div id="write"></div>
+</body>
+</html>
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="window.location.href='ind3x.html'">Geri Dön</button>
+    <button onclick="document.write('lorem')">Click me</button>
+    <hr/>
+    <button onclick="document.write('lorem')">Click me</button>
+   
+</html>
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+
+
+
+
+!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="değer1"></div>
+    <div id="değer2"></div>
+    <button onclick="document.getElementById('değer1').innerText = 'Merhaba'">Click me</button>
+    <button onclick="document.getElementById('değer2').innerHTML = '<h1>Dünya<h1/>'">Click me</button>
+     
+</body>
+</html>
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #değer1{
+            height: 100px;
+            width: 100px;
+            background-color: aqua;
+        }
+        #değer2{
+            height: 200px;
+            width: 200px;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div id="değer1">
+    </div>
+    <button onclick="document.getElementById('değer1').innerHTML = '<div id=değer2>'
+    '</div>'">Click me</button>
+</body>
+</html>
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            height: 300px;
+            width: 300px;
+        }
+        #resim{
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <div id="değer1">Kerem</div>
+    <div id="değer2">BİTER</div>
+    <button onclick="document.getElementById('değer1').textContent = 'Kerem BİTER'">Click me</button>
+    <button onclick="document.getElementById('değer2').textContent = 'BİTER Kerem'">Click me</button>
+    <image id="resim"/>
+    <button onclick="document.getElementById('resim').src = 'download.jpg'">resmi değiştir</button>
+    <button onclick="document.getElementById('resim').src = 'kopruler-sanal-santiye.jpg'">resmi değiştir</button>
+<hr>
+<img src="download.jpg" id="resim1">
+<button onclick="document.getElementById('resim1').src = 'kopruler-sanal-santiye.jpg'">resmi değiştir</button>
+</html>
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function addText(){
+            var text=document.getElementById("text").innerText("HelloWorld");
+            alert(text);
+        }
+        function plus(){
+        var count = document.getElementById("count").innerText
+        count++;
+        document.getElementById("count").innerText=count;
+    }
+        function reset(){
+        sıfırlama = 0;
+        document.getElementById("count").innerText = sıfırlama;
+    }
+         function additem(){
+            var additem = document.getElementById("additem").innerHTML
+            additem +="<button>merhaba</button>";
+            document.getElementById("additem").innerHTML=additem;
+         }
+    </script>
+</head>
+<body>
+    <div id="text"></div>
+    <br>
+    <button id="button" onclick="loadtext()">Get Text</button>
+    <hr>
+    <button onclick="addText()">Add Text</button>
+    <hr/>
+    <button id="plus" onclick="plus()">+</button>
+    <button id="reset" onclick="reset()">reset</button>
+    <hr/>
+    <h1 id="count">0</h1>
+    <button  onclick="additem()">add item</button>   
+    <div id="additem"></div>
+    
+</body>
+</html>
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+    function plus(){
+        var count = document.getElementById("count").innerText
+        count++;
+        document.getElementById("count").innerText=count;
+    }
+    function minus(){
+        var count = document.getElementById("count").innerText;
+        count = parseInt(count);
+        count -= 1;
+        document.getElementById("count").innerText = count;
+    }
+    function reset(){
+        sıfırlama = 0;
+        document.getElementById("count").innerText = sıfırlama;
+    }
+</script>
+</head>
+<body>
+   <div id="text"></div>
+    <button id="plus" onclick="plus()">+</button>
+    <button id="minus" onclick="minus()">-</button>
+    <button id="reset" onclick="reset()">reset</button>
+    <h1 id="count">0</h1>
+</body>
+</html>
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+       function sum(){
+        var number1 = document.getElementById("number1").value
+        var number2 = document.getElementById("number2").value
+        var result = parseInt(number1) + parseInt(number2);
+        document.getElementById("result").innerHTML = "Sonuç:" + result;
+        }
+        function sub(){
+            var number1 = document.getElementById("number1").value
+        var number2 = document.getElementById("number2").value
+        var result = parseInt(number1) - parseInt(number2);
+        document.getElementById("result").innerHTML = "Sonuç:" + result
+        }
+        function mul(){
+            var number1 = document.getElementById("number1").value
+        var number2 = document.getElementById("number2").value
+        var result = parseInt(number1) * parseInt(number2);
+        document.getElementById("result").innerHTML = "Sonuç:" + result;
+        }
+        function div(){
+            var number1 = document.getElementById("number1").value
+        var number2 = document.getElementById("number2").value
+        var result = parseInt(number1) / parseInt(number2);
+        document.getElementById("result").innerHTML = "Sonuç:" + result;
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <label for="number1">1.sayıyı girirniz</label><br/><br/>  
+        <input type="text" id="number1" /><br/><br/>
+        <label for="number2">2.sayıyı girirniz</label><br/><br/>
+        <input type="text" id="number2" /><br/><br/>
+        <button onclick="sum()">topla</button><br/><br/> 
+        <button onclick="sub()">çıkar</button><br/><br/> 
+        <button onclick="mul()">çarp</button><br/><br/> 
+        <button onclick="div()">böl</button><br/><br/> 
+        <p id="result"></p>
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function hesapla(){
+            var number1 = document.getElementById("number1").value;
+            var number2 = document.getElementById("number2").value;
+            var islem = document.getElementById("islem").value;
+            /*if (islem == 1) {
+                alert(Number(number1) + Number(number2));
+            } else if (islem == 2){
+                alert(Number(number1)) - Number(number2);
+            }
+            else if (islem == 3){
+                alert(Number(number1)) * Number(number2);
+            }
+            else if (islem == 4){
+                alert(Number(number1)) / Number(number2);
+            }
+                */
+                switch (islem) {
+          case "1":
+            alert(Number(number1) + Number(number2));
+            break;
+          case "2":
+            alert(Number(number1) - Number(number2));
+            break;
+          case "3":
+            alert(Number(number1) * Number(number2));
+            break;
+          case "4":
+            alert(Number(number1) / Number(number2));
+            break;
+          default:
+            alert("Hatalı işlem");
+            break;
+        }
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <label for="number1">1.sayıyı girirniz</label><br/><br/>  
+        <input type="text" id="number1" /><br/><br/>
+        <label for="number2">2.sayıyı girirniz</label><br/><br/>
+        <input type="text" id="number2" /><br/><br/>
+        <select id="islem">
+            <option value="1">toplama</option>
+            <option value="2">çıkarma</option>
+            <option value="3">çarpma</option>
+            <option value="3">bölme</option>
+            </select>
+            <br/><br/>
+            <button onclick="hesapla()">hesapla</button><br/><br/>
+</body>
+</html>
